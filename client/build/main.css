@@ -1,0 +1,23 @@
+body {
+  background-color: #00dffc;
+  color: #343838;
+}
+
+#app {
+  margin: 0 auto;
+  padding: 20px 40px;
+  width: 400px;
+  background-color: #008c9e;
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat";
+}
+
+li {
+  font-family: "Roboto";
+}
+
+img {
+  margin: 20px 40px;
+}
