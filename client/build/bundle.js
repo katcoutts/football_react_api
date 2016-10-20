@@ -19791,7 +19791,7 @@
 	      'div',
 	      null,
 	      React.createElement(
-	        'h2',
+	        'h1',
 	        null,
 	        'Football!!!'
 	      ),
@@ -19871,7 +19871,7 @@
 	    "div",
 	    null,
 	    React.createElement(
-	      "h3",
+	      "h2",
 	      null,
 	      props.team.name
 	    ),

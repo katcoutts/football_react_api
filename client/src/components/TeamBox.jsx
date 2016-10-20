@@ -30,7 +30,7 @@ var TeamBox = React.createClass({
   render: function() {
     return (
       <div>
-        <h2>Football!!!</h2>
+        <h1>Football!!!</h1>
         <TeamSelector 
           teams={this.state.teams} 
           selectTeam={this.setFocusTeam} />

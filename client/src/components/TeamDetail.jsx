@@ -9,7 +9,7 @@ var TeamDetail = function( props ) {
 
   return (
     <div>
-    <h3>{props.team.name}</h3>
+    <h2>{props.team.name}</h2>
     <img src={props.team.crestUrl} width="100"/>
     <ul>
       <li>Squad market value: {props.team.squadMarketValue}</li>
