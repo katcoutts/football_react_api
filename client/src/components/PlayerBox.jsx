@@ -20,6 +20,7 @@ var PlayerBox = React.createClass({
   makeRequest: function(url){
     var request = new XMLHttpRequest();
     request.open('GET', url);
+    request.setRequestHeader("X-AUTH-TOKEN", "4937a8b3e8d34d3f94fd8b8e4f73b4b9");
     request.onload = function() {
       var data = JSON.parse( request.responseText );
       this.setState({ players: data.players })

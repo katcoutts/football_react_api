@@ -18,6 +18,7 @@ var FixtureBox = React.createClass({
   makeRequest: function(url){
     var request = new XMLHttpRequest();
     request.open('GET', url);
+    request.setRequestHeader("X-AUTH-TOKEN", "4937a8b3e8d34d3f94fd8b8e4f73b4b9");
     request.onload = function() {
       var data = JSON.parse(request.responseText);
       this.setState({ fixtures: data.fixtures })
@@ -33,7 +34,6 @@ var FixtureBox = React.createClass({
   render: function(){
   return (
     <div>
-      <h2>Fixtures</h2>
       <FixtureList fixtures={this.state.fixtures}/>
     </div>
     )

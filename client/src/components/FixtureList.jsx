@@ -34,11 +34,11 @@ var FixtureList = function(props){
 
   return(
     <div className='fixture-list'>
-      <h3>Results</h3>
+      <h2>Results</h2>
       <ul>
         {resultNodes}
       </ul> 
-      <h3>Fixtures</h3>
+      <h2>Fixtures</h2>
       <ul>
         {fixtureNodes}
       </ul>

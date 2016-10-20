@@ -19923,6 +19923,7 @@
 	  makeRequest: function makeRequest(url) {
 	    var request = new XMLHttpRequest();
 	    request.open('GET', url);
+	    request.setRequestHeader("X-AUTH-TOKEN", "4937a8b3e8d34d3f94fd8b8e4f73b4b9");
 	    request.onload = function () {
 	      var data = JSON.parse(request.responseText);
 	      this.setState({ players: data.players });
@@ -20088,6 +20089,7 @@
 	  makeRequest: function makeRequest(url) {
 	    var request = new XMLHttpRequest();
 	    request.open('GET', url);
+	    request.setRequestHeader("X-AUTH-TOKEN", "4937a8b3e8d34d3f94fd8b8e4f73b4b9");
 	    request.onload = function () {
 	      var data = JSON.parse(request.responseText);
 	      this.setState({ fixtures: data.fixtures });
@@ -20103,11 +20105,6 @@
 	    return React.createElement(
 	      'div',
 	      null,
-	      React.createElement(
-	        'h2',
-	        null,
-	        'Fixtures'
-	      ),
 	      React.createElement(FixtureList, { fixtures: this.state.fixtures })
 	    );
 	  }
@@ -20181,7 +20178,7 @@
 	    'div',
 	    { className: 'fixture-list' },
 	    React.createElement(
-	      'h3',
+	      'h2',
 	      null,
 	      'Results'
 	    ),
@@ -20191,7 +20188,7 @@
 	      resultNodes
 	    ),
 	    React.createElement(
-	      'h3',
+	      'h2',
 	      null,
 	      'Fixtures'
 	    ),
